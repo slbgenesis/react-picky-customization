@@ -20,6 +20,7 @@ class Filter extends Component {
           aria-label="filter options"
           onChange={e => this.props.onFilterChange(e.target.value)}
         />
+            <i class="fa fa-times" aria-hidden="true"></i>close
       </div>
     );
   }
