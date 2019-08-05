@@ -242,7 +242,7 @@ class Picky extends React.PureComponent {
    * @memberof Picky
    */
   onFilterChange(term) {
-    console.log("test");
+    console.log("test-filter");
     /**
      * getFilterValue function will provide the input value of filter to the picky dropdown, so that if we have a larger list of options then we can only supply the matching options based on this value
      */
