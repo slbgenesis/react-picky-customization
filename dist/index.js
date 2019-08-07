@@ -17,8 +17,8 @@ var debounce = function(r, n) {
   };
 };
 function includes(e, t, r) {
-  var searchByStartLetter = new RegExp('\\b' + t, 'i');
-  var result = e.search(searchByStartLetter); // return r?(-1<(((String(e).indexOf(String(t)))==0)?(String(e).indexOf(String(t))):-2)):
+  var searchByStartLetter = new RegExp('\\b' + String(t), 'i');
+  var result = String(e).search(searchByStartLetter); // return r?(-1<(((String(e).indexOf(String(t)))==0)?(String(e).indexOf(String(t))):-2)):
   // (-1<(((String(e).toLowerCase().indexOf(String(t).toLowerCase()))==0)?(String(e).toLowerCase().indexOf(String(t).toLowerCase())):-2))
   return r ? -1 < result : -1 < result;
 }
@@ -444,7 +444,7 @@ var Option = function(e) {
         style: a,
         'data-selected': n ? 'selected' : '',
         'aria-selected': n,
-        className: p,
+        className: d!=="Clear all "?p:"Clearall",
         onClick: function() {
           return !c && i(r);
         },
