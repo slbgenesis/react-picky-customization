@@ -674,7 +674,6 @@ function _getPrototypeOf$1(e) {
       })(e);
 }
 function _assertThisInitialized$1(e) {
-  console.log('testt' + e);
   if (void 0 === e)
     throw new ReferenceError(
       "this hasn't been initialised - super() hasn't been called"
